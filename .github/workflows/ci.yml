@@ -14,7 +14,7 @@ jobs:
     - users: actions/checkout@v2
 
     -users: actions/setup-python@v2
-      with:
+    with:
         python-version: '3.x'
 
     - run: pip install -r requirements.txt
