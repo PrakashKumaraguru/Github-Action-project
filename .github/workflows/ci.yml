@@ -11,11 +11,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - users: actions/checkout@v2
+    - uses: actions/checkout@v2
 
-    -users: actions/setup-python@v2
-    with:
-        python-version: '3.x'
+    -uses: actions/setup-python@v2
+     with:
+      python-version: '3.x'
 
     - run: pip install -r requirements.txt
 
